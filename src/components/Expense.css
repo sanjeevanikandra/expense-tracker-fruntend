@@ -1,0 +1,382 @@
+/* Dashboard */
+.dashbordBackgornd {
+    background: linear-gradient(to bottom right, #3c4f77, #f0f4f8) !important;
+}
+
+/* Header part */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom right, lightskyblue, rebeccapurple, sandybrown);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 4rem;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.username {
+    margin-right: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .username {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 30px;
+    }
+
+    .username {
+        font-size: 1em;
+    }
+}
+
+/* Container for the form */
+.formContainer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Form elements layout */
+.MuiFormControl-root,
+.MuiButtonBase-root {
+    border-radius: 8px;
+}
+
+/* Button styling */
+.MuiButton-contained {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MuiButton-contained:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive behavior for Grid */
+@media (max-width: 1200px) {
+    .formContainer {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 10px;
+        max-width: 95%;
+    }
+    
+    .MuiGrid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MuiGrid-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Trending Section Style */
+.trendingSection {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trendingSection:hover {
+    transform: translateY(-5px);
+}
+
+.trendingSection h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.trendingSection .trendItem {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.trendingSection .trendItem:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Adjust font size for smaller devices */
+@media (max-width: 768px) {
+    .trendingSection h2 {
+        font-size: 20px;
+    }
+
+    .trendingSection .trendItem {
+        font-size: 16px;
+    }
+}
+
+/* Table Styles */
+.table-container {
+    margin: 20px auto;
+    max-width: 90%;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* Filter Item */
+.filter-item {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+/* Labels */
+.filter-item label {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* Select & Input Styles */
+.filter-item select,
+.filter-item input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.filter-item select:focus,
+.filter-item input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styles */
+.filter-item button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 8rem;
+}
+
+.filter-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter-item {
+        width: 100%;
+    }
+}
+
+/* Container for the pie chart */
+.pie-chart-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Pie chart container */
+.pie-chart-container {
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading */
+.pie-chart-container h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .pie-chart-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .pie-chart-container h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Income Display Container */
+.income-display-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+}
+
+.income-display-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.income-display-container .income-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .income-display-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .income-display-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .income-display-container .income-item {
+        font-size: 1rem;
+    }
+}
