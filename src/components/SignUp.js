@@ -23,7 +23,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/signup', user);
+            const response = await axios.post('https://expense-tracker-backend-2-2mum.onrender.com/api/auth/signup', user);
             alert('Signup successful!');
             console.log(response.data);
     
